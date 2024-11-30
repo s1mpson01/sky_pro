@@ -10,3 +10,4 @@
 1. Клонируйте репозиторий:
 ```
 git clone https://github.com/s1mpson01/sky_pro.git
+```
