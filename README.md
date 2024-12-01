@@ -11,3 +11,15 @@
 ```
 git clone https://github.com/s1mpson01/sky_pro.git
 ```
+2. Установка окружения:
+```
+pip install poetry
+poetry init
+```
+## Тестирование проекта
+* Наш проект покрыт тестами фреймворка Pytest.
+* Установка. ` pip install pytest`
+* Отчет .......
+
+
+

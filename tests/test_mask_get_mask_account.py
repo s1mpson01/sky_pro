@@ -23,9 +23,10 @@ def test_get_mask_card_number_negative_19_symbols():
         get_mask_account(-1111222233334444555)
 
 
-@pytest.mark.parametrize("account_number, expected", [(11112222333344445555, "**5555"),
-                                                   (44445555666677778888, "**8888"),
-                                                   (11112222333344440000, "**0000")])
+@pytest.mark.parametrize(
+    "account_number, expected",
+    [(11112222333344445555, "**5555"), (44445555666677778888, "**8888"), (11112222333344440000, "**0000")],
+)
 def test_get_mask_account_with_parametrize(account_number, expected):
     assert get_mask_account(account_number) == expected
 
