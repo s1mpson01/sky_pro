@@ -25,9 +25,9 @@ def get_date(data_string: str) -> str:
     """Принимает на вход строку с датой в формате "2024-03-11T02:26:18.671407"
     и возвращает строку с датой в формате ДД.ММ.ГГГГ"""
 
-    data_string_search = re.search(r"\d{4}-\d{2}-\d{2}\D\d{2}:\d{2}:\d{2}[.]\d{6}", data_string)
+    data_string_search = re.search(r"^\d{4}-\d{2}-\d{2}\D\d{2}:\d{2}:\d{2}[.]\d{6}$", data_string)
 
-    if isinstance(data_string_search, re.Match) and len(data_string) == 26:
+    if isinstance(data_string_search, re.Match):
 
         if int(data_string[8:10]) in range(1, 32) and int(data_string[5:7]) in range(1,13) and int(data_string[:4]) > 0:
             return f"{data_string[8:10]}.{data_string[5:7]}.{data_string[:4]}"
