@@ -22,4 +22,13 @@ poetry init
 * Отчет .......
 
 
-
+## Использование
+Генератор который генерирует 
+номера банковских карт в формате 
+XXXX XXXX XXXX XXXX. Где 1 и 5 границы диапазонов
+```
+for card_number in card_number_generator(1, 5):
+    print(card_number)
+```
+## Прочая информация
+1. Добавлен модуль generators.py
