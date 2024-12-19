@@ -32,3 +32,5 @@ for card_number in card_number_generator(1, 5):
 ```
 ## Прочая информация
 1. Добавлен модуль generators.py
+2. Добавлен модуль decorators.py 
+который логирует результат работ в файл 
