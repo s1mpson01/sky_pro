@@ -31,6 +31,3 @@ def get_list_of_transactions(path: str) -> list:
     else:
         # logger.info("Finish")
         return [i for i in data]
-
-
-# print(get_list_of_transactions("../data/operations.json"))
